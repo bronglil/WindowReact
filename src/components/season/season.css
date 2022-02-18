@@ -1,0 +1,46 @@
+.Winter{
+    background-color: #8A39E1;
+
+}
+.summer{
+    background-color: #8A39E1;
+;
+}
+.season-display{
+    display: grid;
+    place-content: center;
+    margin-top: auto;
+        height: 100vh;
+    position: relative;
+}
+
+.season-display i{
+    /* font-size: 4rem; */
+    margin: 2rem 0;
+
+}
+
+.snowflake{
+    color: wheat;
+}
+.sun{
+    color: yellow;
+}
+
+.season-display h1{
+    /* margin-bottom: 5rem; */
+    color: white;
+    font-size: 2.3rem;
+}
+
+.icon-left{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.icon-right{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}

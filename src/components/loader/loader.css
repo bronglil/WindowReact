@@ -1,0 +1,59 @@
+.fullLoader{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    
+}
+.spinner div{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    border: 10px solid transparent;
+    border-top-color: #ad60f5;
+    border-radius: 50%;
+    animation: singleLoader 1.2s linear infinite;
+}
+
+.spinner div:nth-child(2){
+    border: 10px solid transparent;
+    border-bottom-color: #ad60f5;
+    animation: doubleLoader 1.2s linear infinite;
+}
+
+
+@keyframes singleLoader {
+    0%{
+        transform: rotate(0deg);
+        border-width: 10px;
+    }
+    50%{
+        transform: rotate(180deg);
+        border-width: 1px;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-width: 10px;
+    }
+}
+
+@keyframes doubleLoader {
+    0%{
+        transform: rotate(0deg);
+        border-width: 1px;
+    }
+    50%{
+        transform: rotate(180deg);
+        border-width: 10px;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-width: 1px;
+    }
+}
